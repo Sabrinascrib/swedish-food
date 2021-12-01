@@ -1,0 +1,209 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  color: #333;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  padding: 0 30px;
+  transition: 0.5s;
+}
+
+.navbar.top {
+  background: transparent;
+}
+
+.navbar a {
+  color: #333;
+  padding: 10px 20px;
+  margin: 0 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar a:hover {
+  border-bottom: rgb(255, 217, 230) 2px solid;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar .logo {
+  font-weight: 400;
+}
+
+.navbar i {
+  color: #333;
+  padding-right: 1rem;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.main-header {
+  margin-top: 40px;
+  color: #fff;
+  padding: 2rem;
+  position: relative;
+  height: 43.4vh;
+}
+
+.main-header h1 {
+  font-size: 50px;
+  margin-top: 130px;
+  color: #fff;
+  text-align: center;
+}
+
+.main-header {
+  content: "";
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.342),
+      rgba(0, 0, 0, 0.342)
+    ),
+    url("../img/pannkaka-long.webp") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30vh;
+  margin-top: 40px;
+  color: #fff;
+  padding: 2rem;
+  position: relative;
+}
+
+.information .pics {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  grid-gap: 1rem;
+}
+
+.information img {
+  height: 300px;
+}
+
+.information-about-the-dish {
+  text-align: center;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.information-about-the-dish p {
+  color: rgb(97, 97, 97);
+  margin-bottom: 80px;
+}
+
+.information-about-the-dish h2 {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+.information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.information a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  margin-top: 50px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid rgb(255, 217, 230);
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+}
+
+.information a span {
+  position: relative;
+  z-index: 2;
+}
+
+.information a:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgb(255, 217, 230);
+  transition: all 0.35s;
+}
+
+.information a:hover {
+  color: #000;
+}
+
+.information a:hover:after {
+  width: 100%;
+}
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+hr {
+  width: 900px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+footer .social i {
+  border: 4px solid rgb(255, 217, 230);
+  border-radius: 50%;
+  color: #444;
+  padding: 5px;
+  margin: 0 10px;
+}
+
+footer p {
+  text-align: center;
+  color: rgb(102, 102, 102);
+  margin-top: 30px;
+}
